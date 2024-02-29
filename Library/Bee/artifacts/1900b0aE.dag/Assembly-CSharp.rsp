@@ -356,7 +356,7 @@
 "Assets/Scripts/Managers/Managers.cs"
 "Assets/Scripts/Managers/ResourceManger.cs"
 "Assets/Scripts/PlayerController.cs"
-"Assets/Scripts/PrefabTest.cs"
+"Assets/Scripts/TestCollision.cs"
 -langversion:9.0
 
 /deterministic
