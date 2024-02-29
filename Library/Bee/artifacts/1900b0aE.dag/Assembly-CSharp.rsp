@@ -354,7 +354,9 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.20f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Scripts/Managers/InputManager.cs"
 "Assets/Scripts/Managers/Managers.cs"
+"Assets/Scripts/Managers/ResourceManger.cs"
 "Assets/Scripts/PlayerController.cs"
+"Assets/Scripts/PrefabTest.cs"
 -langversion:9.0
 
 /deterministic
