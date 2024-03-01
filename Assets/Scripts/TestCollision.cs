@@ -21,13 +21,23 @@ public class TestCollision : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 look = transform.TransformDirection(Vector3.forward);
-        Debug.DrawRay(transform.position + Vector3.up, look * 10, Color.red);
-
-        RaycastHit hit;
-        if( Physics.Raycast(transform.position + Vector3.up, look, out hit, 10))
+        if (Input.GetMouseButton(0))
         {
-            Debug.Log($"Raycast {hit.collider.gameObject.name}");
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+            Debug.DrawRay(Camera.main.transform.position, ray.direction * 100.0f, Color.red, 1.0f);
+
+            LayerMask mask = LayerMask.GetMask("Monster");
+            //int mask = (1 << 6);
+            RaycastHit hit;
+
+            if(Physics.Raycast(ray, out hit, 100.0f, mask))
+            {
+                Debug.Log($"Raycast Camera @ name : {hit.collider.gameObject.name} tag : {hit.collider.gameObject.tag}");
+            }
+
         }
+
+
     }
 }
