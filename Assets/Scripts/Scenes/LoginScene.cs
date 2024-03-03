@@ -11,6 +11,8 @@ public class LoginScene : BaseScene
 
         SceneType = Define.Scene.Login;
 
+        //Managers.Resource.Instantiate("UnityChan");
+
     }
 
     private void Update()
