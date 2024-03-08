@@ -8,7 +8,7 @@ public class CameraController : MonoBehaviour
     Define.CameraMode _mode = Define.CameraMode.QuarterVeiw;
 
     [SerializeField]
-    Vector3 _delta = new Vector3(0.0f, 6.0f, -5.0f);
+    Vector3 _delta = new Vector3(3.0f, 6.0f, -5.0f);
 
     [SerializeField]
     GameObject _player = null;
