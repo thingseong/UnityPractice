@@ -4,6 +4,15 @@ using UnityEngine;
 
 public class Define
 {
+    public enum State
+    {
+        Die,
+        Moving,
+        Skill,
+        Idle,
+        Dash,
+    }
+
     public enum Sound
     {
         BGM,
